@@ -66,3 +66,4 @@ public class Pong implements ActionListener, KeyListener
 		player2 = new Paddle(this, 2);
 		ball = new Ball(this);
 	}
+        
