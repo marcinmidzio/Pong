@@ -72,5 +72,8 @@ public class Pong implements ActionListener, KeyListener
         g.setColor(Color.BLACK);
         g.fillRect(0, 0, width, height);
         g.setRenderingHint(RenderingHints.KEY_ANTIALIASING, RenderingHints.VALUE_ANTIALIAS_ON);
-    }
-}        
+      
+        if (gameStatus == 0)
+        {
+            g.setColor(Color.WHITE);
+            g.setFont(new Font("Arial", 1, 50));    
