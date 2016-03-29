@@ -77,3 +77,9 @@ public class Pong implements ActionListener, KeyListener
         {
             g.setColor(Color.WHITE);
             g.setFont(new Font("Arial", 1, 50));    
+
+            g.drawString("PONG", width / 2 - 75, 50);
+
+			if (!selectingDifficulty)
+			{
+	g.setFont(new Font("Arial", 1, 30));
