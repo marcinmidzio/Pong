@@ -79,7 +79,13 @@ public class Pong implements ActionListener, KeyListener
             g.setFont(new Font("Arial", 1, 50));    
 
             g.drawString("PONG", width / 2 - 75, 50);
-
-			if (!selectingDifficulty)
+            
+            if (!selectingDifficulty)
 			{
-	g.setFont(new Font("Arial", 1, 30));
+				g.setFont(new Font("Arial", 1, 30));
+
+				g.drawString("Press Space to Play", width / 2 - 150, height / 2 - 25);
+				g.drawString("Press Shift to Play with Bot", width / 2 - 200, height / 2 + 25);
+				g.drawString("<< Score Limit: " + scoreLimit + " >>", width / 2 - 150, height / 2 + 75);
+			}
+		}
