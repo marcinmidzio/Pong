@@ -89,3 +89,6 @@ public class Pong implements ActionListener, KeyListener
 				g.drawString("<< Score Limit: " + scoreLimit + " >>", width / 2 - 150, height / 2 + 75);
 			}
 		}
+        if (selectingDifficulty)
+		{
+		String string = botDifficulty == 0 ? "Easy" : (botDifficulty == 1 ? "Medium" : "Hard");
