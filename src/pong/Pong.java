@@ -92,3 +92,8 @@ public class Pong implements ActionListener, KeyListener
         if (selectingDifficulty)
 		{
 		String string = botDifficulty == 0 ? "Easy" : (botDifficulty == 1 ? "Medium" : "Hard");
+                g.setFont(new Font("Arial", 1, 30));
+
+			g.drawString("<< Bot Difficulty: " + string + " >>", width / 2 - 180, height / 2 - 25);
+			g.drawString("Press Space to Play", width / 2 - 150, height / 2 + 25);
+		}
