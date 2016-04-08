@@ -5,13 +5,23 @@ Do stworzenie projektu „Pong” wykorzystam środowisko programistyczne język
 Plan realizacji „ Pong „
 
 1 Instalacja niezbędnego oprogramowania. Okno programu
+
 2 Tworzenie klasy Pong
+
 3 Tworzenie menu
+
 4 Stworzenie poziomu trudności
+
 5 Tworzenie pauzy
+
 6  Poruszanie się
+
 7 Tworzenie klasy Ball
+
 8 Tworzenie klasy Paddle
+
 9 Tworzenie klasy Renderer
+
 10 Testowanie
+
 11 Poprawa ewentualnych błędów 
