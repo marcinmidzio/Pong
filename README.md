@@ -12,13 +12,13 @@ Plan realizacji „ Pong „
 
 4 Stworzenie poziomu trudności
 
-5 Tworzenie pauzy
+5 Tworzenie klasy Paddle
 
-6  Poruszanie się
+6 Tworzenie pauzy
 
-7 Tworzenie klasy Ball
+7  Poruszanie się
 
-8 Tworzenie klasy Paddle
+8 Tworzenie klasy Ball
 
 9 Tworzenie klasy Renderer
 
