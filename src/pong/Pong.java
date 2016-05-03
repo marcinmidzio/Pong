@@ -106,3 +106,21 @@ if (gameStatus == 1 || gameStatus == 2)
 			g.drawLine(width / 2, 0, width / 2, height);
 
 			g.setStroke(new BasicStroke(2f));
+g.drawOval(width / 2 - 150, height / 2 - 150, 300, 300);
+
+			g.setFont(new Font("Arial", 1, 50));
+
+			g.drawString(String.valueOf(player1.score), width / 2 - 90, 50);
+			g.drawString(String.valueOf(player2.score), width / 2 + 65, 50);
+
+			player1.render(g);
+			player2.render(g);
+			ball.render(g);
+		}
+
+		if (gameStatus == 3)
+		{
+			g.setColor(Color.WHITE);
+			g.setFont(new Font("Arial", 1, 50));
+
+			g.drawString("PONG", width / 2 - 75, 50);
