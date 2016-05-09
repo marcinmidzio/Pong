@@ -66,7 +66,26 @@ public class Pong implements ActionListener, KeyListener
 		player2 = new Paddle(this, 2);
 		ball = new Ball(this);
 	}
-        
+       public void update()
+	{
+		if (player1.score >= scoreLimit)
+		{
+			playerWon = 1;
+			gameStatus = 3;
+		}
+                
+                if (player2.score >= scoreLimit)
+		{
+			gameStatus = 3;
+			playerWon = 2;
+		}
+
+		if (w)
+		{
+			player1.move(true);
+		}
+		if (s)
+
     public void render(Graphics2D g)
     {
         g.setColor(Color.BLACK);
