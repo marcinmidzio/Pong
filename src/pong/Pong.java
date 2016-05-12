@@ -85,6 +85,65 @@ public class Pong implements ActionListener, KeyListener
 			player1.move(true);
 		}
 		if (s)
+                    {
+			player1.move(false);
+		}
+
+		if (!bot)
+		{
+			if (up)
+			{
+				player2.move(true);
+			}
+			if (down)
+			{
+				player2.move(false);
+			}
+		}
+		else
+		{
+			if (botCooldown > 0)
+			{
+				botCooldown--;
+
+				if (botCooldown == 0)
+				{
+					botMoves = 0;
+				}
+			}
+
+			if (botMoves < 10)
+			{
+				if (player2.y + player2.height / 2 < ball.y)
+				{
+					player2.move(false);
+					botMoves++;
+				}
+
+				if (player2.y + player2.height / 2 > ball.y)
+				{
+					player2.move(true);
+					botMoves++;
+				}
+
+				if (botDifficulty == 0)
+				{
+					botCooldown = 20;
+				}
+				if (botDifficulty == 1)
+				{
+					botCooldown = 15;
+				}
+				if (botDifficulty == 2)
+				{
+					botCooldown = 10;
+				}
+			}
+		}
+
+		ball.update(player1, player2);
+	}
+
 
     public void render(Graphics2D g)
     {
