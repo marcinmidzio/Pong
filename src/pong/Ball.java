@@ -56,8 +56,8 @@ public class Ball
 				}
 			}
 		}
-                
-                if (checkCollision(paddle1) == 1)
+
+		if (checkCollision(paddle1) == 1)
 		{
 			this.motionX = 1 + (amountOfHits / 5);
 			this.motionY = -2 + random.nextInt(4);
