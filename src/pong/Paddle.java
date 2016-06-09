@@ -14,7 +14,7 @@ public class Paddle
 
 	public Paddle(Pong pong, int paddleNumber)
 	{
-         this.paddleNumber = paddleNumber;
+		this.paddleNumber = paddleNumber;
 
 		if (paddleNumber == 1)
 		{
